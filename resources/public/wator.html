@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="wator.js"></script>
+    <title>WATOR</title>
+    <style type="text/css">
+      <!--
+          @import "styles/gen_styles.css";
+      -->
+    </style>
+  </head>
+  <body onload="wator.setup()" bgcolor="#ffffff">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="title" valign="top">Wator Simulation</td>
+        <td>
+          <input type="text" id="version" disabled="disabled" 
+                 style="text-align: right" size="6"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div style="width: 420px;height: 420px;overflow: auto">
+            <canvas id="watorCanvas" width="400" height="400"
+                    style="border:1px solid #000000;" >
+            </canvas>
+          </div>
+        </td>
+        <td valign="top">
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="controls" align="center">
+                <input type="button" value="Start" 
+                       onclick="wator.start()"/>
+              </td>
+              <td class="controls" align="center">
+                <input type="button" value="Stop" 
+                       onclick="wator.stop()"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="controls" align="center">
+                <input type="button" value="Reset" onclick="wator.reset()"/>
+              </td>
+              <td class="controls">
+              </td>
+              <td/>
+            </tr>
+            <tr>
+              <td class="params">Fish Breeding Age:</td>
+              <td class="params">
+                <input type="text" id="fishbreed" class="numeric"
+                       size="6" maxlength="10" 
+                       onchange="wator.set_param(this.id)"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="params">Shark Breeding Age:</td>
+              <td class="params">
+                <input type="text" id="sharkbreed" class="numeric" 
+                       size="6" maxlength="10" 
+                       onchange="wator.set_param('sharkbreed')"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="params">Shark Starvation:</td>
+              <td class="params">
+                <input type="text" id="sharkstarve" class="numeric"
+                       size="6" maxlength="10" 
+                       onchange="wator.set_param('sharkstarve')"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="results"># Chronons:</td>
+              <td class="results">
+                <input class="numeric" type="text" id="ngeneration" 
+                       disabled="disabled" size="6"></input>
+              </td>
+            </tr>
+            <tr>
+              <td class="results"># Fish:</td>
+              <td class="results">
+                <input class="numeric" type="text" id="nfish" 
+                       disabled="disabled" size="6"></input>
+              </td>
+            </tr>
+            <tr>
+              <td class="results"># Sharks:</td>
+              <td class="results">
+                <input class="numeric" type="text" id="nsharks" 
+                       disabled="disabled" size="6"></input>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p> More text</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <p>
+      This is where the decription will go.
+    </p>
+  </body>
+</html>
