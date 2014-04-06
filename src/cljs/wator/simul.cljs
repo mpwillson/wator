@@ -132,7 +132,7 @@
                fish-create-fn (dec count) width height)
         (recur matrix fish-create-fn count width height)))))
 
-(defn generate-initial-population [width height nfish nsharks]
+(defn set-initial-population [width height nfish nsharks]
   (let [matrix (-> (make-matrix width height)
                    (seed-ocean make-shark nsharks width height)
                    (seed-ocean make-fish nfish width height))]
@@ -145,7 +145,7 @@
       (live f x y new-ocean)
       new-ocean)))
 
-(defn next-generation []
+(defn next-chronon []
     (swap! ocean (partial reduce process-fish) (coords @ocean)))
 
 ;; determine current ocean population

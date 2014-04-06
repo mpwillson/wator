@@ -33,12 +33,11 @@
   
 (defn draw [time-stamp]
   (when @running
-    (simul/next-generation)
+    (simul/next-chronon)
     (display-ocean)
-    (gui/set-value  :ngeneration (swap! running inc))
+    (gui/set-value  :nchronons (swap! running inc))
     (let [count (simul/get-population)]
-      (gui/set-value :nfish (:nfish count))
-      (gui/set-value :nsharks (:nsharks count))
+      (doseq [k (keys count)] (gui/set-value k (k count)))
       (if (or (zero? (:nsharks count)) (zero? (:nfish count)))
         (reset! running nil)
         (js/window.requestAnimationFrame draw)))))
@@ -54,12 +53,12 @@
 (defn reset[]
   (stop)
   (gui/clear)
-  (simul/generate-initial-population ocean-width ocean-height nfish nsharks))
+  (simul/set-initial-population ocean-width ocean-height nfish nsharks))
 
 (defn ^:export setup []
   (if (not (gui/canvas-available))
     (.write js/document unsupported)
-    (let [_ nil]
+    (do
       (gui/set-value :version (str "v" version))
       (doseq [[k v] @simul/breed-params] (gui/set-value k v))
       (reset))))
