@@ -21,9 +21,7 @@
   (vec (repeat m (vec (repeat n nil)))))
 
 (defn moved? [xy nxy]
-  (let [[x y] xy
-        [nx ny] nxy]
-    (or (not= x nx) (not= y ny))))
+  (not (zero? (compare xy nxy))))
 
 (defn neighbours [xy width height]
   (let [deltas [[0 1] [1 1] [1 0] [1 -1] [-1 0] [0 -1] [-1 -1] [-1 1]]
