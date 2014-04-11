@@ -38,6 +38,14 @@
   (set! (.-fillStyle ctx) (color color-map))
   (.fillRect ctx x y size size))
 
+(defn display-matrix [matrix width height color-map]
+  (let [canvas (gui/get-element :watorCanvas)
+        ctx (gui/get-context canvas)]
+    (doseq [x (range width) y (range height)]
+      (let [value (get-in matrix [x y])]
+        (gui/draw-symbol ctx (* x 10) (* y 10) 5 
+                         (color-map (type value)))))))
+
 (defn clear []
   (let [canvas (get-element :watorCanvas)
         width (.-width canvas)

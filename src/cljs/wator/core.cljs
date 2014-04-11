@@ -23,18 +23,14 @@
         param-value (gui/get-value param)]
     (simul/set-param param-key param-value)))
 
-(defn display-ocean []
-  (let [canvas (gui/get-element :watorCanvas)
-        ctx (gui/get-context canvas)]
-    (doseq [x (range ocean-width) y (range ocean-height)]
-      (let [value (get-in (simul/get-matrix) [x y])]
-        (gui/draw-symbol ctx (* x 10) (* y 10) 5 
-                         (fish-color (type value)))))))
+(defn display-ocean [ocean color-map]
+  (gui/display-matrix (:matrix ocean) (:width ocean) (:height ocean) 
+                      color-map))
   
 (defn draw [time-stamp]
   (when @running
     (simul/next-chronon)
-    (display-ocean)
+    (display-ocean @simul/ocean fish-color)
     (gui/set-value  :nchronons (swap! running inc))
     (let [count (simul/get-population)]
       (doseq [k (keys count)] (gui/set-value k (k count)))
