@@ -148,10 +148,10 @@
 
 (defn count-population [count xy]
   (let [f (get-in (:matrix @ocean) xy)]
-    (condp  = (type f)
-        Fish (assoc count :nfish (inc (:nfish count)))
-        Shark (assoc count :nsharks (inc (:nsharks count)))
-        nil count)))
+    (if f
+      (let [count-key ({Fish :nfish, Shark :nsharks} (type f))]
+        (merge-with + count {count-key 1}))
+      count)))
 
 (defn get-population []
   (reduce count-population {:nsharks 0, :nfish 0} (coords @ocean)))

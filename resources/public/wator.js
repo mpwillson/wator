@@ -23288,35 +23288,35 @@ simul.NewFish.prototype.cljs$core$ILookup$_lookup$arity$2 = function(this__4027_
   var this__4027__auto____$1 = this;
   return cljs.core._lookup.call(null, this__4027__auto____$1, k__4028__auto__, null);
 };
-simul.NewFish.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__4029__auto__, k6649, else__4030__auto__) {
+simul.NewFish.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__4029__auto__, k6927, else__4030__auto__) {
   var self__ = this;
   var this__4029__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k6649, new cljs.core.Keyword(null, "fish", "fish", 1017047498))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k6927, new cljs.core.Keyword(null, "fish", "fish", 1017047498))) {
     return self__.fish;
   } else {
-    if (cljs.core.keyword_identical_QMARK_.call(null, k6649, new cljs.core.Keyword(null, "xy", "xy", 1013908083))) {
+    if (cljs.core.keyword_identical_QMARK_.call(null, k6927, new cljs.core.Keyword(null, "xy", "xy", 1013908083))) {
       return self__.xy;
     } else {
       if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-        return cljs.core.get.call(null, self__.__extmap, k6649, else__4030__auto__);
+        return cljs.core.get.call(null, self__.__extmap, k6927, else__4030__auto__);
       } else {
         return null;
       }
     }
   }
 };
-simul.NewFish.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__4034__auto__, k__4035__auto__, G__6648) {
+simul.NewFish.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__4034__auto__, k__4035__auto__, G__6926) {
   var self__ = this;
   var this__4034__auto____$1 = this;
-  var pred__6651 = cljs.core.keyword_identical_QMARK_;
-  var expr__6652 = k__4035__auto__;
-  if (cljs.core.truth_(pred__6651.call(null, new cljs.core.Keyword(null, "fish", "fish", 1017047498), expr__6652))) {
-    return new simul.NewFish(G__6648, self__.xy, self__.__meta, self__.__extmap, null);
+  var pred__6929 = cljs.core.keyword_identical_QMARK_;
+  var expr__6930 = k__4035__auto__;
+  if (cljs.core.truth_(pred__6929.call(null, new cljs.core.Keyword(null, "fish", "fish", 1017047498), expr__6930))) {
+    return new simul.NewFish(G__6926, self__.xy, self__.__meta, self__.__extmap, null);
   } else {
-    if (cljs.core.truth_(pred__6651.call(null, new cljs.core.Keyword(null, "xy", "xy", 1013908083), expr__6652))) {
-      return new simul.NewFish(self__.fish, G__6648, self__.__meta, self__.__extmap, null);
+    if (cljs.core.truth_(pred__6929.call(null, new cljs.core.Keyword(null, "xy", "xy", 1013908083), expr__6930))) {
+      return new simul.NewFish(self__.fish, G__6926, self__.__meta, self__.__extmap, null);
     } else {
-      return new simul.NewFish(self__.fish, self__.xy, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__4035__auto__, G__6648), null);
+      return new simul.NewFish(self__.fish, self__.xy, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__4035__auto__, G__6926), null);
     }
   }
 };
@@ -23364,10 +23364,10 @@ simul.NewFish.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(this__4023__a
     return false;
   }
 };
-simul.NewFish.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__4026__auto__, G__6648) {
+simul.NewFish.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__4026__auto__, G__6926) {
   var self__ = this;
   var this__4026__auto____$1 = this;
-  return new simul.NewFish(self__.fish, self__.xy, G__6648, self__.__extmap, self__.__hash);
+  return new simul.NewFish(self__.fish, self__.xy, G__6926, self__.__extmap, self__.__hash);
 };
 simul.NewFish.prototype.cljs$core$ICloneable$_clone$arity$1 = function(this__4021__auto__) {
   var self__ = this;
@@ -23398,8 +23398,8 @@ simul.NewFish.cljs$lang$ctorPrWriter = function(this__4061__auto__, writer__4062
 simul.__GT_NewFish = function __GT_NewFish(fish, xy) {
   return new simul.NewFish(fish, xy);
 };
-simul.map__GT_NewFish = function map__GT_NewFish(G__6650) {
-  return new simul.NewFish((new cljs.core.Keyword(null, "fish", "fish", 1017047498)).cljs$core$IFn$_invoke$arity$1(G__6650), (new cljs.core.Keyword(null, "xy", "xy", 1013908083)).cljs$core$IFn$_invoke$arity$1(G__6650), null, cljs.core.dissoc.call(null, G__6650, new cljs.core.Keyword(null, "fish", "fish", 1017047498), new cljs.core.Keyword(null, "xy", "xy", 1013908083)));
+simul.map__GT_NewFish = function map__GT_NewFish(G__6928) {
+  return new simul.NewFish((new cljs.core.Keyword(null, "fish", "fish", 1017047498)).cljs$core$IFn$_invoke$arity$1(G__6928), (new cljs.core.Keyword(null, "xy", "xy", 1013908083)).cljs$core$IFn$_invoke$arity$1(G__6928), null, cljs.core.dissoc.call(null, G__6928, new cljs.core.Keyword(null, "fish", "fish", 1017047498), new cljs.core.Keyword(null, "xy", "xy", 1013908083)));
 };
 simul.set_param = function set_param(key, value) {
   return cljs.core.swap_BANG_.call(null, simul.breed_params, cljs.core.assoc, key, value);
@@ -23414,41 +23414,41 @@ simul.make_matrix = function make_matrix(m, n) {
   return cljs.core.vec.call(null, cljs.core.repeat.call(null, m, cljs.core.vec.call(null, cljs.core.repeat.call(null, n, null))));
 };
 simul.moved_QMARK_ = function moved_QMARK_(xy, nxy) {
-  var vec__6656 = xy;
-  var x = cljs.core.nth.call(null, vec__6656, 0, null);
-  var y = cljs.core.nth.call(null, vec__6656, 1, null);
-  var vec__6657 = nxy;
-  var nx = cljs.core.nth.call(null, vec__6657, 0, null);
-  var ny = cljs.core.nth.call(null, vec__6657, 1, null);
+  var vec__6934 = xy;
+  var x = cljs.core.nth.call(null, vec__6934, 0, null);
+  var y = cljs.core.nth.call(null, vec__6934, 1, null);
+  var vec__6935 = nxy;
+  var nx = cljs.core.nth.call(null, vec__6935, 0, null);
+  var ny = cljs.core.nth.call(null, vec__6935, 1, null);
   return cljs.core.not_EQ_.call(null, x, nx) || cljs.core.not_EQ_.call(null, y, ny);
 };
 simul.neighbours = function neighbours(xy, width, height) {
   var deltas = new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 1], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 1], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 0], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, -1], null), new cljs.core.PersistentVector(null, 
   2, 5, cljs.core.PersistentVector.EMPTY_NODE, [-1, 0], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, -1], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [-1, -1], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [-1, 1], null)], null);
-  var vec__6667 = xy;
-  var x = cljs.core.nth.call(null, vec__6667, 0, null);
-  var y = cljs.core.nth.call(null, vec__6667, 1, null);
-  var iter__4158__auto__ = function iter__6668(s__6669) {
+  var vec__6945 = xy;
+  var x = cljs.core.nth.call(null, vec__6945, 0, null);
+  var y = cljs.core.nth.call(null, vec__6945, 1, null);
+  var iter__4158__auto__ = function iter__6946(s__6947) {
     return new cljs.core.LazySeq(null, function() {
-      var s__6669__$1 = s__6669;
+      var s__6947__$1 = s__6947;
       while (true) {
-        var temp__4092__auto__ = cljs.core.seq.call(null, s__6669__$1);
+        var temp__4092__auto__ = cljs.core.seq.call(null, s__6947__$1);
         if (temp__4092__auto__) {
-          var s__6669__$2 = temp__4092__auto__;
-          if (cljs.core.chunked_seq_QMARK_.call(null, s__6669__$2)) {
-            var c__4156__auto__ = cljs.core.chunk_first.call(null, s__6669__$2);
+          var s__6947__$2 = temp__4092__auto__;
+          if (cljs.core.chunked_seq_QMARK_.call(null, s__6947__$2)) {
+            var c__4156__auto__ = cljs.core.chunk_first.call(null, s__6947__$2);
             var size__4157__auto__ = cljs.core.count.call(null, c__4156__auto__);
-            var b__6671 = cljs.core.chunk_buffer.call(null, size__4157__auto__);
+            var b__6949 = cljs.core.chunk_buffer.call(null, size__4157__auto__);
             if (function() {
-              var i__6670 = 0;
+              var i__6948 = 0;
               while (true) {
-                if (i__6670 < size__4157__auto__) {
-                  var vec__6674 = cljs.core._nth.call(null, c__4156__auto__, i__6670);
-                  var dx = cljs.core.nth.call(null, vec__6674, 0, null);
-                  var dy = cljs.core.nth.call(null, vec__6674, 1, null);
-                  cljs.core.chunk_append.call(null, b__6671, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.mod.call(null, x + dx, width), cljs.core.mod.call(null, y + dy, height)], null));
-                  var G__6676 = i__6670 + 1;
-                  i__6670 = G__6676;
+                if (i__6948 < size__4157__auto__) {
+                  var vec__6952 = cljs.core._nth.call(null, c__4156__auto__, i__6948);
+                  var dx = cljs.core.nth.call(null, vec__6952, 0, null);
+                  var dy = cljs.core.nth.call(null, vec__6952, 1, null);
+                  cljs.core.chunk_append.call(null, b__6949, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.mod.call(null, x + dx, width), cljs.core.mod.call(null, y + dy, height)], null));
+                  var G__6954 = i__6948 + 1;
+                  i__6948 = G__6954;
                   continue;
                 } else {
                   return true;
@@ -23456,15 +23456,15 @@ simul.neighbours = function neighbours(xy, width, height) {
                 break;
               }
             }()) {
-              return cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, b__6671), iter__6668.call(null, cljs.core.chunk_rest.call(null, s__6669__$2)));
+              return cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, b__6949), iter__6946.call(null, cljs.core.chunk_rest.call(null, s__6947__$2)));
             } else {
-              return cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, b__6671), null);
+              return cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, b__6949), null);
             }
           } else {
-            var vec__6675 = cljs.core.first.call(null, s__6669__$2);
-            var dx = cljs.core.nth.call(null, vec__6675, 0, null);
-            var dy = cljs.core.nth.call(null, vec__6675, 1, null);
-            return cljs.core.cons.call(null, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.mod.call(null, x + dx, width), cljs.core.mod.call(null, y + dy, height)], null), iter__6668.call(null, cljs.core.rest.call(null, s__6669__$2)));
+            var vec__6953 = cljs.core.first.call(null, s__6947__$2);
+            var dx = cljs.core.nth.call(null, vec__6953, 0, null);
+            var dy = cljs.core.nth.call(null, vec__6953, 1, null);
+            return cljs.core.cons.call(null, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.mod.call(null, x + dx, width), cljs.core.mod.call(null, y + dy, height)], null), iter__6946.call(null, cljs.core.rest.call(null, s__6947__$2)));
           }
         } else {
           return null;
@@ -23481,8 +23481,8 @@ simul.filter_matrix = function filter_matrix(matrix, xy, filter_type) {
 };
 simul.neighbours_type = function neighbours_type(nbtype, matrix, width, height, xy) {
   var ncells = simul.neighbours.call(null, xy, width, height);
-  return cljs.core.filter.call(null, function(p1__6677_SHARP_) {
-    return simul.filter_matrix.call(null, matrix, p1__6677_SHARP_, nbtype);
+  return cljs.core.filter.call(null, function(p1__6955_SHARP_) {
+    return simul.filter_matrix.call(null, matrix, p1__6955_SHARP_, nbtype);
   }, ncells);
 };
 simul.inc_attr = function inc_attr(new_fish, attribute) {
@@ -23516,35 +23516,35 @@ simul.insert_new = function insert_new(moved, breed, birth_type, xy, ocean) {
   }
 };
 simul.coords = function coords(ocean) {
-  var iter__4158__auto__ = function iter__6684(s__6685) {
+  var iter__4158__auto__ = function iter__6962(s__6963) {
     return new cljs.core.LazySeq(null, function() {
-      var s__6685__$1 = s__6685;
+      var s__6963__$1 = s__6963;
       while (true) {
-        var temp__4092__auto__ = cljs.core.seq.call(null, s__6685__$1);
+        var temp__4092__auto__ = cljs.core.seq.call(null, s__6963__$1);
         if (temp__4092__auto__) {
           var xs__4579__auto__ = temp__4092__auto__;
           var x = cljs.core.first.call(null, xs__4579__auto__);
-          var iterys__4154__auto__ = function(s__6685__$1, x, xs__4579__auto__, temp__4092__auto__) {
-            return function iter__6686(s__6687) {
-              return new cljs.core.LazySeq(null, function(s__6685__$1, x, xs__4579__auto__, temp__4092__auto__) {
+          var iterys__4154__auto__ = function(s__6963__$1, x, xs__4579__auto__, temp__4092__auto__) {
+            return function iter__6964(s__6965) {
+              return new cljs.core.LazySeq(null, function(s__6963__$1, x, xs__4579__auto__, temp__4092__auto__) {
                 return function() {
-                  var s__6687__$1 = s__6687;
+                  var s__6965__$1 = s__6965;
                   while (true) {
-                    var temp__4092__auto____$1 = cljs.core.seq.call(null, s__6687__$1);
+                    var temp__4092__auto____$1 = cljs.core.seq.call(null, s__6965__$1);
                     if (temp__4092__auto____$1) {
-                      var s__6687__$2 = temp__4092__auto____$1;
-                      if (cljs.core.chunked_seq_QMARK_.call(null, s__6687__$2)) {
-                        var c__4156__auto__ = cljs.core.chunk_first.call(null, s__6687__$2);
+                      var s__6965__$2 = temp__4092__auto____$1;
+                      if (cljs.core.chunked_seq_QMARK_.call(null, s__6965__$2)) {
+                        var c__4156__auto__ = cljs.core.chunk_first.call(null, s__6965__$2);
                         var size__4157__auto__ = cljs.core.count.call(null, c__4156__auto__);
-                        var b__6689 = cljs.core.chunk_buffer.call(null, size__4157__auto__);
+                        var b__6967 = cljs.core.chunk_buffer.call(null, size__4157__auto__);
                         if (function() {
-                          var i__6688 = 0;
+                          var i__6966 = 0;
                           while (true) {
-                            if (i__6688 < size__4157__auto__) {
-                              var y = cljs.core._nth.call(null, c__4156__auto__, i__6688);
-                              cljs.core.chunk_append.call(null, b__6689, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x, y], null));
-                              var G__6690 = i__6688 + 1;
-                              i__6688 = G__6690;
+                            if (i__6966 < size__4157__auto__) {
+                              var y = cljs.core._nth.call(null, c__4156__auto__, i__6966);
+                              cljs.core.chunk_append.call(null, b__6967, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x, y], null));
+                              var G__6968 = i__6966 + 1;
+                              i__6966 = G__6968;
                               continue;
                             } else {
                               return true;
@@ -23552,13 +23552,13 @@ simul.coords = function coords(ocean) {
                             break;
                           }
                         }()) {
-                          return cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, b__6689), iter__6686.call(null, cljs.core.chunk_rest.call(null, s__6687__$2)));
+                          return cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, b__6967), iter__6964.call(null, cljs.core.chunk_rest.call(null, s__6965__$2)));
                         } else {
-                          return cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, b__6689), null);
+                          return cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, b__6967), null);
                         }
                       } else {
-                        var y = cljs.core.first.call(null, s__6687__$2);
-                        return cljs.core.cons.call(null, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x, y], null), iter__6686.call(null, cljs.core.rest.call(null, s__6687__$2)));
+                        var y = cljs.core.first.call(null, s__6965__$2);
+                        return cljs.core.cons.call(null, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [x, y], null), iter__6964.call(null, cljs.core.rest.call(null, s__6965__$2)));
                       }
                     } else {
                       return null;
@@ -23566,15 +23566,15 @@ simul.coords = function coords(ocean) {
                     break;
                   }
                 };
-              }(s__6685__$1, x, xs__4579__auto__, temp__4092__auto__), null, null);
+              }(s__6963__$1, x, xs__4579__auto__, temp__4092__auto__), null, null);
             };
-          }(s__6685__$1, x, xs__4579__auto__, temp__4092__auto__);
+          }(s__6963__$1, x, xs__4579__auto__, temp__4092__auto__);
           var fs__4155__auto__ = cljs.core.seq.call(null, iterys__4154__auto__.call(null, cljs.core.range.call(null, (new cljs.core.Keyword(null, "height", "height", 4087841945)).cljs$core$IFn$_invoke$arity$1(ocean))));
           if (fs__4155__auto__) {
-            return cljs.core.concat.call(null, fs__4155__auto__, iter__6684.call(null, cljs.core.rest.call(null, s__6685__$1)));
+            return cljs.core.concat.call(null, fs__4155__auto__, iter__6962.call(null, cljs.core.rest.call(null, s__6963__$1)));
           } else {
-            var G__6691 = cljs.core.rest.call(null, s__6685__$1);
-            s__6685__$1 = G__6691;
+            var G__6969 = cljs.core.rest.call(null, s__6963__$1);
+            s__6963__$1 = G__6969;
             continue;
           }
         } else {
@@ -23628,8 +23628,8 @@ simul.breed_and_update = function breed_and_update(new_fish, xy, birth_type, bre
   return simul.insert_new.call(null, simul.moved_QMARK_.call(null, xy, nxy), breed, birth_type, xy, simul.update.call(null, new_fish, nxy, ocean));
 };
 simul.Generate = function() {
-  var obj6693 = {};
-  return obj6693;
+  var obj6971 = {};
+  return obj6971;
 }();
 simul.live = function live(this$, xy, ocean) {
   if (function() {
@@ -23689,28 +23689,28 @@ simul.Fish.prototype.cljs$core$ILookup$_lookup$arity$2 = function(this__4027__au
   var this__4027__auto____$1 = this;
   return cljs.core._lookup.call(null, this__4027__auto____$1, k__4028__auto__, null);
 };
-simul.Fish.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__4029__auto__, k6695, else__4030__auto__) {
+simul.Fish.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__4029__auto__, k6973, else__4030__auto__) {
   var self__ = this;
   var this__4029__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k6695, new cljs.core.Keyword(null, "age", "age", 1014000753))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k6973, new cljs.core.Keyword(null, "age", "age", 1014000753))) {
     return self__.age;
   } else {
     if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-      return cljs.core.get.call(null, self__.__extmap, k6695, else__4030__auto__);
+      return cljs.core.get.call(null, self__.__extmap, k6973, else__4030__auto__);
     } else {
       return null;
     }
   }
 };
-simul.Fish.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__4034__auto__, k__4035__auto__, G__6694) {
+simul.Fish.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__4034__auto__, k__4035__auto__, G__6972) {
   var self__ = this;
   var this__4034__auto____$1 = this;
-  var pred__6697 = cljs.core.keyword_identical_QMARK_;
-  var expr__6698 = k__4035__auto__;
-  if (cljs.core.truth_(pred__6697.call(null, new cljs.core.Keyword(null, "age", "age", 1014000753), expr__6698))) {
-    return new simul.Fish(G__6694, self__.__meta, self__.__extmap, null);
+  var pred__6975 = cljs.core.keyword_identical_QMARK_;
+  var expr__6976 = k__4035__auto__;
+  if (cljs.core.truth_(pred__6975.call(null, new cljs.core.Keyword(null, "age", "age", 1014000753), expr__6976))) {
+    return new simul.Fish(G__6972, self__.__meta, self__.__extmap, null);
   } else {
-    return new simul.Fish(self__.age, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__4035__auto__, G__6694), null);
+    return new simul.Fish(self__.age, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__4035__auto__, G__6972), null);
   }
 };
 simul.Fish.prototype.simul$Generate$ = true;
@@ -23762,10 +23762,10 @@ simul.Fish.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(this__4023__auto
     return false;
   }
 };
-simul.Fish.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__4026__auto__, G__6694) {
+simul.Fish.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__4026__auto__, G__6972) {
   var self__ = this;
   var this__4026__auto____$1 = this;
-  return new simul.Fish(self__.age, G__6694, self__.__extmap, self__.__hash);
+  return new simul.Fish(self__.age, G__6972, self__.__extmap, self__.__hash);
 };
 simul.Fish.prototype.cljs$core$ICloneable$_clone$arity$1 = function(this__4021__auto__) {
   var self__ = this;
@@ -23796,8 +23796,8 @@ simul.Fish.cljs$lang$ctorPrWriter = function(this__4061__auto__, writer__4062__a
 simul.__GT_Fish = function __GT_Fish(age) {
   return new simul.Fish(age);
 };
-simul.map__GT_Fish = function map__GT_Fish(G__6696) {
-  return new simul.Fish((new cljs.core.Keyword(null, "age", "age", 1014000753)).cljs$core$IFn$_invoke$arity$1(G__6696), null, cljs.core.dissoc.call(null, G__6696, new cljs.core.Keyword(null, "age", "age", 1014000753)));
+simul.map__GT_Fish = function map__GT_Fish(G__6974) {
+  return new simul.Fish((new cljs.core.Keyword(null, "age", "age", 1014000753)).cljs$core$IFn$_invoke$arity$1(G__6974), null, cljs.core.dissoc.call(null, G__6974, new cljs.core.Keyword(null, "age", "age", 1014000753)));
 };
 simul.Shark = function(age, starve, __meta, __extmap) {
   this.age = age;
@@ -23831,35 +23831,35 @@ simul.Shark.prototype.cljs$core$ILookup$_lookup$arity$2 = function(this__4027__a
   var this__4027__auto____$1 = this;
   return cljs.core._lookup.call(null, this__4027__auto____$1, k__4028__auto__, null);
 };
-simul.Shark.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__4029__auto__, k6701, else__4030__auto__) {
+simul.Shark.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__4029__auto__, k6979, else__4030__auto__) {
   var self__ = this;
   var this__4029__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k6701, new cljs.core.Keyword(null, "age", "age", 1014000753))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k6979, new cljs.core.Keyword(null, "age", "age", 1014000753))) {
     return self__.age;
   } else {
-    if (cljs.core.keyword_identical_QMARK_.call(null, k6701, new cljs.core.Keyword(null, "starve", "starve", 4416388083))) {
+    if (cljs.core.keyword_identical_QMARK_.call(null, k6979, new cljs.core.Keyword(null, "starve", "starve", 4416388083))) {
       return self__.starve;
     } else {
       if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-        return cljs.core.get.call(null, self__.__extmap, k6701, else__4030__auto__);
+        return cljs.core.get.call(null, self__.__extmap, k6979, else__4030__auto__);
       } else {
         return null;
       }
     }
   }
 };
-simul.Shark.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__4034__auto__, k__4035__auto__, G__6700) {
+simul.Shark.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__4034__auto__, k__4035__auto__, G__6978) {
   var self__ = this;
   var this__4034__auto____$1 = this;
-  var pred__6703 = cljs.core.keyword_identical_QMARK_;
-  var expr__6704 = k__4035__auto__;
-  if (cljs.core.truth_(pred__6703.call(null, new cljs.core.Keyword(null, "age", "age", 1014000753), expr__6704))) {
-    return new simul.Shark(G__6700, self__.starve, self__.__meta, self__.__extmap, null);
+  var pred__6981 = cljs.core.keyword_identical_QMARK_;
+  var expr__6982 = k__4035__auto__;
+  if (cljs.core.truth_(pred__6981.call(null, new cljs.core.Keyword(null, "age", "age", 1014000753), expr__6982))) {
+    return new simul.Shark(G__6978, self__.starve, self__.__meta, self__.__extmap, null);
   } else {
-    if (cljs.core.truth_(pred__6703.call(null, new cljs.core.Keyword(null, "starve", "starve", 4416388083), expr__6704))) {
-      return new simul.Shark(self__.age, G__6700, self__.__meta, self__.__extmap, null);
+    if (cljs.core.truth_(pred__6981.call(null, new cljs.core.Keyword(null, "starve", "starve", 4416388083), expr__6982))) {
+      return new simul.Shark(self__.age, G__6978, self__.__meta, self__.__extmap, null);
     } else {
-      return new simul.Shark(self__.age, self__.starve, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__4035__auto__, G__6700), null);
+      return new simul.Shark(self__.age, self__.starve, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__4035__auto__, G__6978), null);
     }
   }
 };
@@ -23913,10 +23913,10 @@ simul.Shark.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(this__4023__aut
     return false;
   }
 };
-simul.Shark.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__4026__auto__, G__6700) {
+simul.Shark.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__4026__auto__, G__6978) {
   var self__ = this;
   var this__4026__auto____$1 = this;
-  return new simul.Shark(self__.age, self__.starve, G__6700, self__.__extmap, self__.__hash);
+  return new simul.Shark(self__.age, self__.starve, G__6978, self__.__extmap, self__.__hash);
 };
 simul.Shark.prototype.cljs$core$ICloneable$_clone$arity$1 = function(this__4021__auto__) {
   var self__ = this;
@@ -23947,8 +23947,8 @@ simul.Shark.cljs$lang$ctorPrWriter = function(this__4061__auto__, writer__4062__
 simul.__GT_Shark = function __GT_Shark(age, starve) {
   return new simul.Shark(age, starve);
 };
-simul.map__GT_Shark = function map__GT_Shark(G__6702) {
-  return new simul.Shark((new cljs.core.Keyword(null, "age", "age", 1014000753)).cljs$core$IFn$_invoke$arity$1(G__6702), (new cljs.core.Keyword(null, "starve", "starve", 4416388083)).cljs$core$IFn$_invoke$arity$1(G__6702), null, cljs.core.dissoc.call(null, G__6702, new cljs.core.Keyword(null, "age", "age", 1014000753), new cljs.core.Keyword(null, "starve", "starve", 4416388083)));
+simul.map__GT_Shark = function map__GT_Shark(G__6980) {
+  return new simul.Shark((new cljs.core.Keyword(null, "age", "age", 1014000753)).cljs$core$IFn$_invoke$arity$1(G__6980), (new cljs.core.Keyword(null, "starve", "starve", 4416388083)).cljs$core$IFn$_invoke$arity$1(G__6980), null, cljs.core.dissoc.call(null, G__6980, new cljs.core.Keyword(null, "age", "age", 1014000753), new cljs.core.Keyword(null, "starve", "starve", 4416388083)));
 };
 simul.make_fish = function make_fish() {
   return new simul.Fish(cljs.core.rand_int.call(null, (new cljs.core.Keyword(null, "fishbreed", "fishbreed", 1703775630)).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null, simul.breed_params))));
@@ -23963,28 +23963,28 @@ simul.seed_ocean = function seed_ocean(matrix, fish_create_fn, count, width, hei
     } else {
       var xy = simul.random_position.call(null, width, height);
       if (cljs.core.get_in.call(null, matrix, xy) == null) {
-        var G__6706 = cljs.core.assoc_in.call(null, matrix, xy, fish_create_fn.call(null));
-        var G__6707 = fish_create_fn;
-        var G__6708 = count - 1;
-        var G__6709 = width;
-        var G__6710 = height;
-        matrix = G__6706;
-        fish_create_fn = G__6707;
-        count = G__6708;
-        width = G__6709;
-        height = G__6710;
+        var G__6984 = cljs.core.assoc_in.call(null, matrix, xy, fish_create_fn.call(null));
+        var G__6985 = fish_create_fn;
+        var G__6986 = count - 1;
+        var G__6987 = width;
+        var G__6988 = height;
+        matrix = G__6984;
+        fish_create_fn = G__6985;
+        count = G__6986;
+        width = G__6987;
+        height = G__6988;
         continue;
       } else {
-        var G__6711 = matrix;
-        var G__6712 = fish_create_fn;
-        var G__6713 = count;
-        var G__6714 = width;
-        var G__6715 = height;
-        matrix = G__6711;
-        fish_create_fn = G__6712;
-        count = G__6713;
-        width = G__6714;
-        height = G__6715;
+        var G__6989 = matrix;
+        var G__6990 = fish_create_fn;
+        var G__6991 = count;
+        var G__6992 = width;
+        var G__6993 = height;
+        matrix = G__6989;
+        fish_create_fn = G__6990;
+        count = G__6991;
+        width = G__6992;
+        height = G__6993;
         continue;
       }
     }
@@ -24016,20 +24016,11 @@ simul.next_chronon = function next_chronon() {
 };
 simul.count_population = function count_population(count, xy) {
   var f = cljs.core.get_in.call(null, (new cljs.core.Keyword(null, "matrix", "matrix", 4227631923)).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null, simul.ocean)), xy);
-  var pred__6719 = cljs.core._EQ_;
-  var expr__6720 = cljs.core.type.call(null, f);
-  if (cljs.core.truth_(pred__6719.call(null, simul.Fish, expr__6720))) {
-    return cljs.core.assoc.call(null, count, new cljs.core.Keyword(null, "nfish", "nfish", 1118634808), (new cljs.core.Keyword(null, "nfish", "nfish", 1118634808)).cljs$core$IFn$_invoke$arity$1(count) + 1);
+  if (cljs.core.truth_(f)) {
+    var count_key = (new cljs.core.PersistentArrayMap.fromArray([simul.Fish, new cljs.core.Keyword(null, "nfish", "nfish", 1118634808), simul.Shark, new cljs.core.Keyword(null, "nsharks", "nsharks", 3246462606)], true, false)).call(null, cljs.core.type.call(null, f));
+    return cljs.core.merge_with.call(null, cljs.core._PLUS_, count, new cljs.core.PersistentArrayMap.fromArray([count_key, 1], true, false));
   } else {
-    if (cljs.core.truth_(pred__6719.call(null, simul.Shark, expr__6720))) {
-      return cljs.core.assoc.call(null, count, new cljs.core.Keyword(null, "nsharks", "nsharks", 3246462606), (new cljs.core.Keyword(null, "nsharks", "nsharks", 3246462606)).cljs$core$IFn$_invoke$arity$1(count) + 1);
-    } else {
-      if (cljs.core.truth_(pred__6719.call(null, null, expr__6720))) {
-        return count;
-      } else {
-        throw new Error([cljs.core.str("No matching clause: "), cljs.core.str(expr__6720)].join(""));
-      }
-    }
+    return count;
   }
 };
 simul.get_population = function get_population() {
