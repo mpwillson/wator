@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript" src="wator.js"></script>
     <title>WATOR</title>
     <style type="text/css">
       <!--
@@ -10,6 +9,7 @@
     </style>
   </head>
   <body onload="wator.setup()" bgcolor="#ffffff">
+    <script type="text/javascript" src="wator.js"></script>
     <table cellspacing="0" cellpadding="0">
       <tr>
         <td class="title" valign="top">Wator Simulation</td>
@@ -92,8 +92,26 @@
               </td>
             </tr>
             <tr>
-              <td colspan="2">
-                <p> Some helpful text (probably)</p>
+              <td colspan="2" width="210">
+                <p>USAGE:</p>
+                <table>
+                  <tr>
+                    <td>Start:</td>
+                    <td>Start or continue simulation.</td>
+                  </tr>
+                  <tr>
+                    <td>Stop:</td>
+                    <td>Pause simulation.</td>
+                  </tr>
+                  <tr>
+                    <td>Reset:</td>
+                    <td>Clear ocean and reseed.</td>
+                  </tr>
+                </table>
+                <p>
+                  Alter the values for Breeding Age and Starvation to
+                  change the behaviour of the simulator.
+                </p>
               </td>
             </tr>
           </table>
@@ -101,7 +119,10 @@
       </tr>
     </table>
     <p>
-      This is where the description will go.
+      Wator is an implemention, in Clojurescript, of the predator/prey
+      simulation described by A.K. Dewdney in "The Armchair
+      Universe". Source code can be found on <a
+      href="http://github.com/mpwillson/wator">Github</a>.
     </p>
   </body>
 </html>

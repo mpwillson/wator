@@ -5,19 +5,22 @@ in The Armchair Universe, by A. K. Dwedney.
 
 ## Installation
 
-Download from http://github.com/mpwillson/wator
+Download from http://github.com/mpwillson/wator.  You'll need
+everthing under the resources directory, which you should copy to an
+appropriate location (or web server) and change as required by the
+environment.
 
 ## Usage
 
-FIXME: explanation
+A. K. Dwedney's original paper can be found [here]
+(http://home.cc.gatech.edu/biocs1/uploads/2/wator_dewdney.pdf).
+
+The only real difference between this version and the original is that
+fish and sharks can move/hunt diagonally as well as orthongonally.
 
 ### Bugs
 
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+Probably many and various.
 
 ## License
 
