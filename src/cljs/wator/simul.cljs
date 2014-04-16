@@ -1,8 +1,15 @@
+;;;; Handles simulation processing for wator
+
 (ns simul)
 
-(def ocean (atom {:matrix nil :width 0 :height 0}))
-(def breed-params (atom {:fishbreed 5 :sharkbreed 10 :sharkstarve 5}))
+(def ocean 
+  "Holds reference to current ocean state."
+  (atom {:matrix nil :width 0 :height 0}))
+(def breed-params 
+  "Reference to breeding parameters."
+  (atom {:fishbreed 5 :sharkbreed 10 :sharkstarve 5}))
 
+;; Holds state of Fish for next chronon.
 (defrecord NewFish [fish xy])
 
 ;; set/get breed parameters
@@ -13,7 +20,6 @@
   (@breed-params key))
 
 ;; utility functions
-
 (defn random-position [width height]
   [(rand-int width) (rand-int height)])
 
@@ -33,15 +39,20 @@
   (let [target (get-in matrix xy)]
     (= (type target) filter-type)))
 
-(defn neighbours-type [nbtype matrix width height xy]
+(defn neighbours-type 
+  "Return list of matrix coordinates where cell xy neighbour occupant
+  is of type nbtype."
+  [nbtype matrix width height xy]
   (let [ncells (neighbours xy width height)]
     (filter #(filter-matrix matrix % nbtype) ncells)))
 
 (defn inc-attr [new-fish attribute]
   (let [f (:fish new-fish)]
-        (assoc new-fish :fish (assoc f attribute (inc (attribute f))))))
+    (assoc new-fish :fish (merge-with + f {attribute 1}))))
 
-(defn update [new-fish xy ocean]
+(defn update 
+  "Return new ocean, updated to include new-fish at coordinate xy."
+  [new-fish xy ocean]
   (let [matrix (:matrix ocean)]
     (assoc ocean :matrix
               (assoc-in matrix xy (:fish new-fish)))))
@@ -57,7 +68,6 @@
         y (range  (:height ocean))] [x y]))
 
 ;; functions to support new fish generation actions
-
 (defn seek [new-fish type xy ocean]
   (let [matrix (:matrix ocean)
         width (:width ocean)
@@ -87,7 +97,6 @@
            (insert-new (moved? xy nxy) breed birth-type xy))))
 
 ;; definition of ocean dwellers
-
 (defprotocol Generate 
   (live [this xy ocean]))
 
@@ -116,7 +125,6 @@
   (Shark. (rand-int (:sharkbreed @breed-params)) 0))
 
 ;; create and update ocean state
-
 (defn seed-ocean [matrix fish-create-fn count width height]
   (if (zero? count)
     matrix
@@ -140,10 +148,9 @@
       new-ocean)))
 
 (defn next-chronon []
-    (swap! ocean (partial reduce process-fish) (coords @ocean)))
+  (swap! ocean (partial reduce process-fish) (coords @ocean)))
 
 ;; determine current ocean population
-
 (defn count-population [count xy]
   (let [f (get-in (:matrix @ocean) xy)]
     (if f

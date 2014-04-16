@@ -1,3 +1,5 @@
+;;;; Provides gui functions for wator
+
 (ns gui
   (:require [cljs.reader :as reader]
             [goog.string :as gstring] ; both this and next line required for
@@ -32,7 +34,7 @@
 (defn get-context [canvas]
   (.getContext canvas "2d"))
 
-;; drawing many circles consumes much CPU time
+;; drawing many circles consumes much CPU time so we draw rects
 (defn draw-symbol 
   [ctx x y size color]
   (set! (.-fillStyle ctx) (color color-map))
@@ -55,3 +57,5 @@
     (.fillRect ctx 0 0 width height)
     #_(.clearRect ctx 0 0 width height)))
 
+(defn animate [animate-fn]
+  (js/window.requestAnimationFrame animate-fn))
