@@ -16,7 +16,7 @@ A. K. Dwedney's original paper can be found [here]
 (http://home.cc.gatech.edu/biocs1/uploads/2/wator_dewdney.pdf).
 
 The only real difference between this version and the original is that
-fish and sharks can move/hunt diagonally as well as orthongonally.
+fish and sharks can move/hunt diagonally as well as orthogonally.
 
 ### Bugs
 
