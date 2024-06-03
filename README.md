@@ -13,7 +13,7 @@ environment.
 ## Usage
 
 More information on Wator can be found
-on[Wikipedia](https://en.wikipedia.org/wiki/Wa-Tor). A. K. Dwedney's
+on [Wikipedia](https://en.wikipedia.org/wiki/Wa-Tor). A. K. Dwedney's
 original paper seems to have disappeared.
 
 The only real difference between this version and the original is that
